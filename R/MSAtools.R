@@ -32,6 +32,7 @@ set2ali <- function(inSet) {
     }
 
     ali <- switch(
+        # convert <DNA|RNA|AA>StringSet to <DNA|RNA|AA>MultipleAlignment
         class(inSet),
         AAStringSet = AAMultipleAlignment(inSet),
         DNAStringSet = DNAMultipleAlignment(inSet),
