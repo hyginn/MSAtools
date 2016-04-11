@@ -1,9 +1,13 @@
 Package: MSAtools
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Tools for multiple sequence alignment analysis
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
-LazyData: TRUE
+Author: Boris Steipe
+Maintainer: Boris Steipe <boris.steipe@utoronto.ca>
+Description: MSA tools provide functions to import multiple sequence alignments
+             as biostrings objects, compile consensus sequences, calculate
+             conservation scores, create sequence logos and more.
+License: GNU General Public License v3.0
+Depends: R, Biostrings
+Suggests: Biobase, knitr
+LazyLoad: yes
